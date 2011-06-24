@@ -1,0 +1,2 @@
+Full on awesome Geocoding Library... Should probably upgrade geocoding process to this guy
+http://www.rubygeocoder.com/?utm_source=rubyweekly&utm_medium=email

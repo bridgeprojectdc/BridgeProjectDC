@@ -1,0 +1,13 @@
+<ul class="results">
+  <% @hits.each_hit_with_result do |hit, service| %>
+  <li class="result">
+    <div><%= service.site_name %></div>
+    <div>Services Provided: <%= service.service_types.map {|s| s.title}.join(", ") %></div>
+  </li>
+  <% end %>
+  <% if @hits.total == 0 %>
+    <li class="result empty">
+      No Results
+    </li>
+  <% end %>
+</ul>

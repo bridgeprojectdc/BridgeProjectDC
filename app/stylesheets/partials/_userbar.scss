@@ -1,0 +1,19 @@
+#user-bar {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FCFCFC',endColorstr='#ECECEC');
+  background: -webkit-gradient(linear,0% 0,0% 100%,from(#FCFCFC),to(#E8E8E8));
+  background: -moz-linear-gradient(270deg,#FCFCFC,#ECECEC);
+  float: right;
+  padding: 9px 10px 7px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 2px $medium-gray;
+  // background: #CCC;
+  @include clearfix;
+  ul {
+    @include horizontal-list;
+    li {
+      padding: 0 9px 0 8px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Admin
+user.services
+
+
+<ul>
+  <%= render :partial => :"home/service", :collection => current_user.services %>
+</ul>
+
+<ul class="actions">
+  <li>
+    <%= link_to "Add a new Service", "#" %>
+  </li>
+  <li>
+    <%= link_to "Edit Services", "#" %>
+  </li>
+</ul>

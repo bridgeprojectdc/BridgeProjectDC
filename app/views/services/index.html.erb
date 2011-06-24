@@ -1,0 +1,34 @@
+<h1>Listing services</h1>
+<ul class="services">
+<% @services.each do |service| %>
+  <li>
+    <h3><%= service.site_name %></h3>
+    <div class="actions">
+      <%= link_to "View", service_path(service), :class => "button" %>
+      <% if false #current_user.subscribed_to? service %>
+        <span class="button">Subscribed!</span>
+      <% else %>
+        <%= link_to "Subscribe", subscribe_service_path(service), :class => "button", :method => :put %>
+      <% end %>
+      <%= link_to "Join", "", :class => "button" %>
+      <%= link_to "Edit", edit_service_path(service), :class => "button" %>
+      <%= link_to 'Destroy', service, :confirm => 'Are you sure?', :method => :delete, :class => "button" %>
+    </div>
+    <div class="service-types">
+      Services Provided:
+      <% service.service_types.each do |s| %>
+        <span><%= s.title %></span>
+      <% end %>
+    </div>
+    <div class="address">
+      <%= service.address %><br/>
+      <%= service.city %> <br/>
+      <%= service.state %> <br/>
+      <%= service.zip %> <br/>
+    </div>
+
+<% end %>
+
+<br />
+
+<%= link_to 'New Service', new_service_path, :class => "button" %>

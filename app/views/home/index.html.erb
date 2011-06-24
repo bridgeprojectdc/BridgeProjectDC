@@ -1,0 +1,12 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% if current_user -%>
+  <%= render :partial => "admin" %>
+<% else -%>
+  <div class="mission">
+    <h2 class="mission-label">Mission:</h2>
+    to provide an up-to-date and comprehensive guide to social services 
+    and public resources in the District of Columbia.
+  </div>
+<% end -%>

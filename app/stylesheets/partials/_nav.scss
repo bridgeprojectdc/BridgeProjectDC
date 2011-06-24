@@ -1,0 +1,30 @@
+#nav {
+  a {
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid $light-blue;
+    &:hover {
+      border-color: $slightly-darker-blue;
+      background-color: $lighter-blue;
+      text-decoration: none;
+    }
+  }
+
+  @include horizontal-list;
+  border-radius: 5px;
+  background-color: $light-blue;
+  color: #FFFFFF;
+  padding: 8px;
+  position: relative;
+  .search {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    float: right;
+    input {
+      // height: 12px;
+    }
+  }
+}
