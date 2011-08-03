@@ -48,4 +48,11 @@
 //     true means it's the last column in the row
 //     @include column($content-columns, true); } }
 
-@import "home"
+@import "home";
+
+
+.google-map {
+  width: 100%;
+  min-height: 400px;
+  border: 2px solid $light-blue;
+}

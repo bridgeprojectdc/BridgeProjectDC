@@ -465,3 +465,10 @@ a.button {
   color: #FFFFFF;
   background-color: #4183C4;
 }
+
+/* line 54, ../../app/stylesheets/screen.scss */
+.google-map {
+  width: 100%;
+  min-height: 400px;
+  border: 2px solid #4183c4;
+}

@@ -5,7 +5,7 @@
     <h3><%= service.site_name %></h3>
     <div class="actions">
       <%= link_to "View", service_path(service), :class => "button" %>
-      <% if false #current_user.subscribed_to? service %>
+      <% if current_user.subscribed_to? service %>
         <span class="button">Subscribed!</span>
       <% else %>
         <%= link_to "Subscribe", subscribe_service_path(service), :class => "button", :method => :put %>

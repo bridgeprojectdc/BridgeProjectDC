@@ -131,7 +131,6 @@ a.button {
 
 #footer {
   width: $site-width;
-  @include horizontal-list;
   margin: 10px auto;
   ul {
     li {

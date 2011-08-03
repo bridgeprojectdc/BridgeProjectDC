@@ -12,6 +12,10 @@ gem "compass"
 gem 'sunspot_rails', '~> 1.2.1'
 gem "devise"
 gem "decent_exposure"
+
+# gem 'rest-client'
+gem 'geocoder'
+
 group :development, :test do
   gem "wirble"
   gem "interactive_editor"
